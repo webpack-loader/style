@@ -1,0 +1,38 @@
+{
+  "name": "@webpack-loaders/style",
+  "version": "1.0.0",
+  "description": "Style Loader",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">= 8"
+  },
+  "dependencies": {
+    "@webpack-utilities/loader": "^1.0.0",
+    "@webpack-utilities/schema": "^1.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.0",
+    "@webpack-loaders/css": "^1.0.0",
+    "@webpack-loaders/url": "^1.0.0",
+    "del": "^3.0.0",
+    "del-cli": "^1.0.0",
+    "jest": "^23.0.0",
+    "standard-version": "^4.0.0",
+    "webpack": "^4.0.0"
+  },
+  "scripts": {
+    "lint": "standard --env jest",
+    "test": "jest --coverage --verbose",
+    "clean": "del-cli coverage",
+    "release": "commitlint --to 'HEAD' && standard-version"
+  },
+  "author": "Michael Ciniawsky (@michael-ciniawsky) <michael.ciniawsky@gmail.com>",
+  "repository": "https://github.com/webpack-loader/style.git",
+  "bugs": "https://github.com/webpack-loader/style/issues",
+  "homepage": "https://webpack.js.org/loaders/style-loader",
+  "license": "MIT"
+}
